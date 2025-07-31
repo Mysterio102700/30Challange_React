@@ -1,0 +1,57 @@
+.container {
+  background-image: url("./Background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clockFace {
+  border: 10px solid snow;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hands {
+  width: 50%;
+  height: 5px;
+  background-color: snow;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+}
+
+.number {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  transform-origin: center;
+  text-align: center;
+  left: 48%;
+  bottom: 48%;
+}
+@media only screen and (max-width: 1280px) {
+  .number {
+    bottom: 47%;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .clockFace {
+    border: 5px solid snow;
+  }
+
+  .number {
+    bottom: 47%;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .hands {
+    height: 3px;
+  }
+}

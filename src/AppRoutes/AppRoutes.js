@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "../Home/Home";
 import Clock from "../Clock/Clock";
+import ArrayCardioDay from "../ArrayCardioDay/ArrayCardioDay";
+import FlexPanelsImageGallery from "../FlexPanelsImageGallery/FlexPanelsImageGallery";
 
 const AppRoutes = () => {
   return (
@@ -9,6 +11,8 @@ const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/clock" element={<Clock />} />
+        <Route path="/array-cardio-day" element={<ArrayCardioDay />} />
+        <Route path="/image-gallery" element={<FlexPanelsImageGallery />} />
       </Routes>
     </BrowserRouter>
   );

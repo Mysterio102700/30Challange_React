@@ -1,5 +1,6 @@
 import React from "react";
-import ClockTHMB from '../Assets/Clock.png'
+import ClockTHMB from '../Assets/Clock.png';
+import ImageGalleryTHMB from '../Assets/ImageGallery.png';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -30,10 +31,10 @@ const Home = () => {
       link: "https://example.com",
     },
     {
-      title: "Todo List",
-      description: "This is the home page of the application.",
-      image: "https://via.placeholder.com/150",
-      link: "https://example.com",
+      title: "Image Gallery",
+      description: "A dynamic React gallery component that displays expandable panels with animated text and background images.",
+      image: ImageGalleryTHMB,
+      link: "/image-gallery",
     },
   ];
   return (

@@ -1,7 +1,8 @@
 import React from "react";
-import ClockTHMB from '../Assets/Clock.png';
-import ImageGalleryTHMB from '../Assets/ImageGallery.png';
-import { Link } from 'react-router-dom';
+import ClockTHMB from "../Assets/Clock.png";
+import ImageGalleryTHMB from "../Assets/ImageGallery.png";
+import AjaxTypeAheadTHMB from "../Assets/AjaxTypeAhead.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const challenges = [
@@ -32,9 +33,17 @@ const Home = () => {
     },
     {
       title: "Image Gallery",
-      description: "A dynamic React gallery component that displays expandable panels with animated text and background images.",
+      description:
+        "A dynamic React gallery component that displays expandable panels with animated text and background images.",
       image: ImageGalleryTHMB,
       link: "/image-gallery",
+    },
+    {
+      title: "Ajax Type Ahead",
+      description:
+        "The React-based search feature that fetches city data from an API and dynamically filters results based on the user's input.",
+      image: AjaxTypeAheadTHMB,
+      link: "/ajax-type-ahead",
     },
   ];
   return (
@@ -42,7 +51,10 @@ const Home = () => {
       <div className="container mx-auto px-3 mt-10">
         <div className="row grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
           {challenges.map((challenge, index) => (
-            <div key={index} className="col w-auto border border-gray-200/10 rounded">
+            <div
+              key={index}
+              className="col w-auto border border-gray-200/10 rounded shine"
+            >
               <img src={challenge.image} alt={challenge.title} />
               <div className="p-3 flex flex-col gap-3">
                 <h2 className="text-xl font-semibold">{challenge.title}</h2>
@@ -50,7 +62,6 @@ const Home = () => {
                 <Link to={challenge.link} className="text-sm">
                   preview
                 </Link>
-                
               </div>
             </div>
           ))}

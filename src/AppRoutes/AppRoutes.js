@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Clock from "../Clock/Clock";
 import ArrayCardioDay from "../ArrayCardioDay/ArrayCardioDay";
 import FlexPanelsImageGallery from "../FlexPanelsImageGallery/FlexPanelsImageGallery";
+import AjaxTypeAhead from "../AjaxTypeAhead/AjaxTypeAhead";
 
 const AppRoutes = () => {
   return (
@@ -13,6 +14,7 @@ const AppRoutes = () => {
         <Route path="/clock" element={<Clock />} />
         <Route path="/array-cardio-day" element={<ArrayCardioDay />} />
         <Route path="/image-gallery" element={<FlexPanelsImageGallery />} />
+        <Route path="/ajax-type-ahead" element={<AjaxTypeAhead />} />
       </Routes>
     </BrowserRouter>
   );
